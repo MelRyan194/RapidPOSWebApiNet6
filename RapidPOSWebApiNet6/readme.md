@@ -1,6 +1,6 @@
 ﻿# RapidPOSWebApiNet6My Project
 
-TThis API project is aimed to process POS Transaction payload.
+This WebAPI project is aimed to process POS Transaction payload.
 
 ## Getting Started
 
@@ -9,4 +9,9 @@ TThis API project is aimed to process POS Transaction payload.
 
 ## Usage
 
-This WEB API is targeting GOLF_WAREHOUSE database primarily for testing purposes. The database backup can be downloaded in this repository
+This WEB API is targeting GOLF_WAREHOUSE database primarily for testing purposes. The database backup can be downloaded in this repository.
+
+## Author
+
+Amelito E. Orayan
+Created this repository using Visual Studio 2022 preview edition
