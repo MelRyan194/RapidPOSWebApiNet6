@@ -128,5 +128,26 @@ namespace RapidPOSWebApiNet6.Controllers
 
             return Ok(_newPayment);
         }
+
+        [HttpDelete]
+        public ActionResult DeletePayment(PaymentEntity payment)
+        {
+            #region Validate data
+            //validate payment info
+            if (payment.DOC_ID == 0)
+            {
+                _logger.LogError("DOC_ID info not passed.");
+                return BadRequest();
+            }
+            if (!(ModelState.IsValid))
+            {
+                _logger.LogError("Required fields were not provided.");
+                return BadRequest();
+            }
+            #endregion
+
+
+            return NoContent();
+        }
     }
 }
